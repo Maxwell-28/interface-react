@@ -1,0 +1,129 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  width: min(700px, 92%);
+  margin: 40px auto;
+}
+
+.cabecalho {
+  margin-bottom: 28px;
+}
+
+.marca {
+  color: #087e68;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: clamp(26px, 5vw, 36px);
+}
+
+.cabecalho p,
+.vazio {
+  color: #64748b;
+}
+
+.painel {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 18px #0f172a0a;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 19px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  margin-bottom: 10px;
+  min-width: 0;
+}
+
+input:focus {
+  outline: 2px solid #0d9488;
+  border-color: transparent;
+}
+
+button {
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #087e68;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #066653;
+}
+
+.lista {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.lista li p {
+  color: #64748b;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.excluir {
+  background: #dc2626;
+  flex-shrink: 0;
+}
+
+.excluir:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 24px auto;
+  }
+
+  .painel {
+    padding: 18px;
+  }
+}
